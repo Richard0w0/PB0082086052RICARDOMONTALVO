@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 
 struct citas
@@ -103,6 +104,16 @@ int main()
 		break;
 		
 		case 5:
+		cout<<"Desea limpiar la pantalla?, 1 para SI, 2 para NO"<<endl;
+		cin>>end;
+		if (end==1)
+		{
+		    system("clear");
+		}
+		else
+		{
+		    return main();
+		}
 		break;
 		case 6:
 		cout<<"Desea salir de la pagina? 1 para SI o 2 para NO"<<endl;
